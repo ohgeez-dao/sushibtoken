@@ -1,16 +1,12 @@
 {
-  "name": "hardhat-foundation",
-  "description": "Hardhat foundation",
+  "name": "@levxdao/sushibtoken",
+  "description": "$SUSHIB",
   "keywords": [
     "hardhat"
   ],
-  "homepage": "https://github.com/sushiswap/hardhat-foundation#readme",
-  "bugs": {
-    "url": "https://github.com/sushiswap/hardhat-foundation/issues",
-    "email": "bugs@sushi.com"
-  },
+  "homepage": "https://github.com/levxdao/sushibtoken#readme",
   "license": "MIT",
-  "author": "Matthew Lilley <hello@matthewlilley.com>",
+  "author": "LevX <dictator@levxdao.org>",
   "scripts": {
     "build": "hardhat compile",
     "console": "hardhat console",
@@ -88,5 +84,8 @@
     "ts-node": "^10.0.0",
     "typechain": "^5.0.0",
     "typescript": "^4.3.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2"
   }
 }
