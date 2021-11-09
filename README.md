@@ -1,76 +1,19 @@
-# HardHat Foundation
+# SUSHIB Token
 
 [![License: WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-3.png)](http://www.wtfpl.net/)
 
 https://twitter.com/Sushibtoken
 
-## Env
-
-```sh
-cp .env.example .env
-```
-
-## Gas
-
-```sh
-yarn test:gas
-```
-
-<https://github.com/cgewecke/hardhat-gas-reporter>
-
-## Lint
-
-```sh
-yarn lint
-```
-
-## Watch
-
-```sh
-npx hardhat watch compile
-```
-
 ## Deployment
 
 ### Local
-
-Running the following command will start a local node and run the defined deploy script on the local node.
-
-```sh
-npx hardhat node
-```
+0x5FbDB2315678afecb367f032d93F642f64180aa3
 
 ### Mainnet
+0xc1920908A3785907051929450683E8C0659a742b
 
-```sh
-yarn mainnet:deploy
-```
-
-```sh
-yarn mainnet:verify
-```
-
-```sh
-hardhat tenderly:verify --network mainnet ContractName=Address
-```
-
-```sh
-hardhat tenderly:push --network mainnet ContractName=Address
-```
-
-### Ropsten
-
-```sh
-yarn ropsten:deploy
-```
-
-```sh
-yarn ropsten:verify
-```
-
-```sh
-hardhat tenderly:verify --network ropsten ContractName=Address
-```
+### Kovan
+0x938047C5776f3E53956bDF7f26f801AC49d9dC55
 
 ## License
 
