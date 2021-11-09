@@ -30,7 +30,7 @@ contract Sushib is ERC20, Ownable {
     function claim(address account, uint256 amount, uint8 v, bytes32 r, bytes32 s, address to) external {
         require(!claimed[account], "SUSHIB: ALREADY_CLAIMED");
         bytes32 hash = keccak256(abi.encode(account, amount));
-        require(ECDSA.recover(hash, v, r, s) == signer, "SUSHIB: INVALID_SIGNATURE");
+        require(ECDSA.recover(ECDSA.toEthSignedMessageHash(hash), v, r, s) == signer, "SUSHIB: INVALID_SIGNATURE");
         claimed[account] = true;
         _mint(to, amount);
 
